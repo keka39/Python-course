@@ -5,8 +5,7 @@
 
 # 6 -> 1  4  1
 # 24 -> 4  16  4
-#     60 -> 10  40  10
-import math
+# 60 -> 10  40  10
 
 print("enter total")
 S = int(input())
@@ -14,13 +13,9 @@ Pet = int(0)
 Ser = int(0)
 Kat = int(0)
 
-if S <= 4:
-    print("Katya did {}".format(S))
-    print("Pet and Ser did 0")
-else:
-    Pet = math.floor(S / 6)
-    Ser = math.floor(S / 6)
-    Kat = S - Pet - Ser    
-    print("Pet did {}".format(Pet))
-    print("Katya did {}".format(Kat))
-    print("Ser did {}".format(Ser))
+Pet = S / 6
+Ser = Pet
+Kat = (2/3) * S  
+print("Pet did {}".format(Pet))
+print("Katya did {}".format(Kat))
+print("Ser did {}".format(Ser))
