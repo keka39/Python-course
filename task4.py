@@ -17,8 +17,6 @@ Kat = int(0)
 if S <= 4:
     print("Katya did {}".format(S))
     print("Pet and Ser did 0")
-if S == 5:
-    print("Katya did 4, Petya did 1, Seryozha did 0")
 else:
     Pet = math.floor(S / 6)
     Ser = math.floor(S / 6)
