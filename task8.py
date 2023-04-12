@@ -11,7 +11,9 @@ m = int(input())
 n = int(input())
 k = int(input())
 
-if k % n == 0 or k % m == 0:
+if n == 1 and m == 1:
+    print("no")
+elif k % n == 0 or k % m == 0:
     print("yes")
 else:
     print("no")
